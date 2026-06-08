@@ -1,0 +1,26 @@
+export function genredropdown() {
+
+const genress = [
+  { id: 28, name: "Action" },
+  { id: 35, name: "Comedy" },
+  { id: 9648, name: "Mystery" },
+  { id: 27, name: "Horror" }
+];
+
+const dropdown = document.getElementById("dropdown");
+const genreBtn = document.getElementById("genreBtn");
+
+genress.forEach(genre => {
+  const link = document.createElement("a");
+
+  link.href = `genres.html?type=movie&genre=${genre.id}&name=${genre.name}`;
+
+  link.textContent = genre.name;
+
+  dropdown.appendChild(link);
+});
+
+genreBtn.addEventListener("click", () => {
+  dropdown.classList.toggle("hidden");
+});
+}

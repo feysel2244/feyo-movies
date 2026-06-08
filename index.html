@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Gallery</title>
+  <link rel="icon" href="https://img.icons8.com/fluency/48/movie.png">
+  
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html"><img class="movie-title" src="assets/images/logo (2).png" alt="Movie Gallery logo"></a>
+        <a href="movies.html">Movies</a>
+        <a href="series.html">TV Shows</a>
+          <button id="genreBtn">Genres</button>
+            <div id="dropdown" class="dropdown hidden">
+              </div>
+          <div class="search-box">
+  <input type="text" class="search-input" placeholder="Search movies...">
+  <span class="search-btn">&#128269;</span>
+</div>
+ <button class="user">&#x1F464;</button>
+        <a href="#">My List</a>
+       
+      </div>
+    </nav>
+  </header>
+
+  <section class="trending">
+    <div class="trending-content">
+      <p class="trending-label">Trending Today</p>
+      <h1>The Last Horizon</h1>
+      <div class="trending-meta">
+        <span>2024</span>
+        <span>2h 18m</span>
+        <span>Sci-fi . Thriller</span>
+        <span class="rating">&#9733;8.4</span>
+      </div>
+      <p class="description">When a deep-space mission goes silent, a lone astronaut must navigate an alien world and confront the secrets of her own past to find a way home.</p>
+      <button>&#9658; Play</button>
+    </div>
+    <img src="assets/images/logo (2).png" alt="The Last Horizon poster">
+    </section>
+  <section class="top-rated-week">
+  <h1 class="search-title">Trending this Week</h1>
+  <div class="rated-week container"></div>
+  <div class="page-buttons">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+  </div>
+   </section>
+   <section class="genre">
+  <a href="genres.html?type=movie&genre=28&name=Action">
+    <span class="genre-icon">&#x1F52A;</span>
+    Action
+  </a>
+
+  <a href="genres.html?type=movie&genre=10749&name=Romance">
+    <span class="genre-icon">&#x1F468;</span>
+    Romance
+  </a>
+
+  <a href="genres.html?type=movie&genre=35&name=Comedy">
+    <span class="genre-icon">&#x1F3A8;</span>
+    Comedy
+  </a>
+
+  <a href="genres.html?type=movie&genre=878&name=Sci-Fi">
+    <span class="genre-icon">&#x1F52C;</span>
+    Sci-fi
+  </a>
+
+  <a href="genres.html?type=movie&genre=9648&name=Mystery">
+    <span class="genre-icon">&#x1F52B;</span>
+    Mystery
+  </a>
+</section>
+     <section class="top-rated-alltime">
+  <h1>Top rated of All Time</h1>
+  <div class="rated-alltime container" ></div>
+  <div class="page-buttons">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+  </div>
+   </section>
+    <footer>
+    <div class="footer-content">
+      <section class="footer-brand">
+        <img src="assets/images/logo (2).png" alt="Feyo logo">
+        <p>Movies and series in one clean place, ready whenever you want to watch.</p>
+      </section>
+      <section class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="series.html">TV Shows</a></li>
+          <li><a href="genres.html">Genres</a></li>
+        </ul>
+      </section>
+      <section class="footer-contact">
+        <h3>Get in Touch</h3>
+        <a href="mailto:feyselanwar2244@gmail.com" target="_blank" rel="noopener noreferrer">feyselanwar2244@gmail.com</a>
+        <a href="tel:+601163813696" target="_blank" rel="noopener noreferrer">+60 11-6381 3696</a>
+      </section>
+      <section class="footer-social">
+        <h3>Follow Me</h3>
+        <div>
+          <a href="https://www.linkedin.com/in/feysel-anwar-a536a7335" target="_blank" rel="noopener noreferrer"><img src="assets/images/linkedin.jpg" alt="LinkedIn"></a>
+          <a href="https://github.com/feysel2244" target="_blank" rel="noopener noreferrer"><img src="assets/images/github.png" alt="GitHub"></a>
+          <a href="https://www.instagram.com/fey_selll" target="_blank" rel="noopener noreferrer"><img src="assets/images/INSTAGRAM.jpg" alt="Instagram"></a>
+        </div>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Feyo. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module"  src="index.js"></script>
+  <dialog class="login-dialog">
+  <div class="login-container">
+  <button class="close-btn" type="button">&times;</button>
+
+  <form class="login-form">
+    <h2>Login/signup</h2>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</div>
+  </dialog>
+</body>
+</html>
