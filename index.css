@@ -231,13 +231,20 @@ left:480px;
   .nav-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+   justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links a:first-child {
     width: 100%;
     margin-right: 0;
   }
+   .user-menu, .search-box{
+  width:100%;
+  }
+}
+.movie-title{
+ margin:0 50%
 }
 
 .trending {
